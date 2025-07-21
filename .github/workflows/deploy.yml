@@ -32,8 +32,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install mkdocs
-          # Add any other mkdocs plugins or themes you use here. For example:
-          # pip install mkdocs-material
+          pip install mkdocs-material
 
       # Builds and deploys the MkDocs site
       - name: Deploy to GitHub Pages
