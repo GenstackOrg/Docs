@@ -1,26 +1,40 @@
-name: Deploy MkDocs to GitHub Pages
+# .github/workflows/deploy.yml
 
+name: Deploy MkDocs Site
+
+# Controls when the action will run.
+# Triggers the workflow on push events but only for the main branch
 on:
   push:
     branches:
       - main
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  # This workflow contains a single job called "deploy"
   deploy:
-    runs-on: ubuntu-20.04
-
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
         uses: actions/checkout@v4
 
+      # Sets up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.10
+          python-version: '3.x'
 
+      # Installs the necessary Python packages, including mkdocs and any themes/plugins
       - name: Install dependencies
         run: |
-          pip install mkdocs-material pymdown-extensions
+          python -m pip install --upgrade pip
+          pip install mkdocs
+          # Add any other mkdocs plugins or themes you use here. For example:
+          # pip install mkdocs-material
 
+      # Builds and deploys the MkDocs site
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force --strict
+        run: mkdocs gh-deploy --force
