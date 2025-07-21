@@ -1,0 +1,19 @@
+# Python crap
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.env/
+.venv/
+env/
+venv/
+
+# MkDocs build
+site/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db

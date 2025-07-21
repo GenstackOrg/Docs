@@ -1,0 +1,42 @@
+site_name: Genstack
+
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  font:
+    text: Poppins
+    code: Fira Code
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/myusername/myapp
+
+extra_css:
+  - stylesheets/extra.css
+
+
+plugins:
+  - search
