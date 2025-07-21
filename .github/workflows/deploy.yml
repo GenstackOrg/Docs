@@ -16,6 +16,8 @@ jobs:
   # This workflow contains a single job called "deploy"
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
