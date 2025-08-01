@@ -1,0 +1,9 @@
+:root {
+    --md-primary-fg-color: #FB9E3A;
+    --md-accent-fg-color: #FB9E3A;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #FB9E3A;
+    --md-accent-fg-color: #FB9E3A;
+}
