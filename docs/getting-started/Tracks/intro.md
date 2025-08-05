@@ -1,44 +1,49 @@
-# Introduction to Tracks
+# Introduction
 
-**Tracks** exist within a **project** and give you complete control over:
+**Tracks** are modular units inside a **project** that give you full control over:
 
-- Supported modalities
-- Customizable response formats
-- Selectable models via API
+* Modalities (input/output types)
+* Response formatting
+* Model selection via API
 
-No rigid flows. You configure everything.
-
----
-
-## Build Your Own Track on Genstack
-
-Follow these steps:
-
-### 1. Name  
-Give your track a short, clear name.
-
-### 2. Track ID  
-Auto-generated from the name, or define your own.
-
-### 3. Description  
-A quick summary to help you identify the track later.
-
-### 4. Type  
-Select the model category:
-- Reasoning models
-- Standard LLMs
-
-> ⚠️ This doesn’t affect model options—just how the track is classified.
-
-### 5. Modalities  
-Choose input/output types.  
-_Currently: text only (both directions)_
-
-### 6. Tools  
-Add tools your models can use:
-- Function calling
-- Web search
+No rigid flows. You define the behavior.
 
 ---
 
-**Your track. Your logic. Your control.**
+## How to Build a Track in Genstack
+
+### 1. **Track Name**
+
+Short, descriptive identifier for your track.
+
+### 2. **Track ID**
+
+Auto-generated from the name. Can be manually overridden.
+
+### 3. **Description**
+
+Optional internal note to describe the track’s purpose.
+
+### 4. **Track Type**
+
+Classify the model scope:
+
+* Reasoning
+* Standard LLMs
+  *Note: This does **not** limit your model options.*
+
+### 5. **Modalities**
+
+Define input and output types.
+**Currently supported:** Text → Text
+
+### 6. **Tools**
+
+Enable tool usage within the track:
+
+* Function calling
+* Web search (beta)
+
+---
+
+**You define the logic. Genstack handles the infra.**
