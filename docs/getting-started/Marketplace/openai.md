@@ -8,3 +8,5 @@
 | **GPT-4o-mini**           | `gpt-4o-mini-oai`           | Compact, cost-efficient variant of GPT-4o; replaced GPT-3.5 Turbo in ChatGPT interface              | Text, Image        | Text            |
 | **o3-pro**                | `o3-pro-oai`                | Top-tier o-series reasoning model released June 10, 2025; extra compute for complex logical tasks   | Text               | Text                   |
 | **o4-mini**               | `o4-mini-oai`               | Latest compact o-series model (Apr 16, 2025); fast, efficient reasoning with optional image support | Text, Image        | Text                     |
+
+**Tip:** When specifying a OpenAI model, be sure to append `-oai` to the model name.
