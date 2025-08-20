@@ -1,4 +1,4 @@
-> **Genstack is currently in beta. Join the waitlist to get early access.**
+> **Genstack is now in public beta. Get started on our [site](https://genstack.site)**
 
 # Genstack Documentation
 
